@@ -1,9 +1,6 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-# echo "DOCKER_OPTS=\"-H tcp://127.0.0.1:4243 -H unix:///var/run/docker.sock\"" >> /etc/default/docker
-# echo export DOCKER_HOST=tcp://localhost:4243 >> ~/.bashrc
-# source ~/.bashrc
 $script = <<SCRIPT
 wget -qO- https://get.docker.com/ | sh
 usermod -aG docker vagrant
